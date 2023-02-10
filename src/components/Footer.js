@@ -8,7 +8,7 @@ function Footer({ setSize, setLikeCount }) {
   return (
     <footer className='footer'>
       <p>
-        This is the footer.
+        This is the footer
         <button onClick={() => state.setSize(30)}>
           Make the text 30px but leave the color the same
         </button>
