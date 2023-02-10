@@ -13,7 +13,13 @@ function Sidebar({ size, color, setSize, setColor }) {
         value={color}
         onChange={(e) => setColor(e.target.value)}
       />
-      <button>Make the text 20px and pink</button>
+      <button
+        onClick={() => {
+          setSize(20), setColor('pink');
+        }}
+      >
+        Make the text 20px and pink
+      </button>
     </div>
   );
 }

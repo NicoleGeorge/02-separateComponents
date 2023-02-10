@@ -18,7 +18,7 @@ function App() {
           The current size is {size} and the current color is {color}.
         </p>
         <p>
-          This page has been liked <strong>0</strong> times.
+          This page has been liked <strong>{likeCount}</strong> times.
         </p>
       </div>
       <Sidebar
@@ -28,7 +28,7 @@ function App() {
         setColor={setColor}
       />
       <MainArea size={size} color={color} />
-      <Footer />
+      <Footer setSize={setSize} setLikeCount={setLikeCount} />
     </div>
   );
 }
