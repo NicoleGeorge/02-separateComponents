@@ -26,9 +26,9 @@ function App() {
             This page has been liked <strong>{likeCount}</strong> times.
           </p>
         </div>
-        <Sidebar  />
-        <MainArea size={size} color={color} />
-        <Footer setSize={setSize} setLikeCount={setLikeCount} />
+        <Sidebar />
+        <MainArea />
+        <Footer />
       </div>
     </OurContext.Provider>
   );
